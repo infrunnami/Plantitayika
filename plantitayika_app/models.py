@@ -31,16 +31,8 @@ class Insumos(models.Model):
     def __str__(self):
         return str(self.Insumos)
 
-class Insumos(models.Model):
-    id_Insumo  = models.AutoField(db_column='idInsumo', primary_key=True) 
-    nombre = models.CharField(max_length=30)
-    precio     = models.IntegerField(blank=False, null=False)
-    descripcion = models.CharField(max_length=500, blank=False, null=False)
-    foto = models.ImageField(upload_to='Insumos/',null=True, blank=True,verbose_name='Foto del Insumo')
 
-    def __str__(self):
-        return str(self.Insumos)
-    
+
 class Clientes(models.Model):
     id_Cliente  = models.AutoField(db_column='id_Cliente', primary_key=True) 
     nombre = models.CharField(max_length=30)
