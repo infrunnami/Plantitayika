@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Acerca de</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'CSS/styles.css' %}">
+</head>
+<body>
+    <h1>Acerca de Nosotros</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'PaginaAcercaDe' %}">Acerca de</a></li>
+            <li><a href="{% url 'PaginaContacto' %}">Contacto</a></li>
+            <li><a href="{% url 'PaginaFormulario' %}">Formulario</a></li>
+            <li><a href="{% url 'PaginaInsumos' %}">Insumos</a></li>
+            <li><a href="{% url 'PaginaMaceteros' %}">Maceteros</a></li>
+            <li><a href="{% url 'PaginaProductos' %}">Productos</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
