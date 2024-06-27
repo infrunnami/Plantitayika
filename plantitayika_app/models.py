@@ -5,7 +5,6 @@ class Plantas(models.Model):
     id_planta  = models.AutoField(db_column='idPlanta', primary_key=True) 
     nombre = models.CharField(max_length=30)
     precio     = models.IntegerField(blank=False, null=False)
-    descripcion = models.CharField(max_length=500, blank=False, null=False)
     foto = models.ImageField(upload_to='Plantas/',null=True, blank=True,verbose_name='Foto de la planta')
 
     def __str__(self):
