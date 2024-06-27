@@ -9,7 +9,7 @@ class Plantas(models.Model):
     foto = models.ImageField(upload_to='Plantas/',null=True, blank=True,verbose_name='Foto de la planta')
 
     def __str__(self):
-        return str(self.Plantas)
+        return str(self.nombre)
     
 class Maceteros(models.Model):
     id_Macetero = models.AutoField(db_column='idMacetero', primary_key=True) 
@@ -19,7 +19,7 @@ class Maceteros(models.Model):
     foto = models.ImageField(upload_to='Maceteros/',null=True, blank=True,verbose_name='Foto del Macetero')
 
     def __str__(self):
-        return str(self.Maceteros)
+        return str(self.nombre)
     
 class Insumos(models.Model):
     id_Insumo  = models.AutoField(db_column='idInsumo', primary_key=True) 
@@ -29,7 +29,7 @@ class Insumos(models.Model):
     foto = models.ImageField(upload_to='Insumos/',null=True, blank=True,verbose_name='Foto del Insumo')
 
     def __str__(self):
-        return str(self.Insumos)
+        return str(self.nombre)
 
 
 
@@ -41,4 +41,4 @@ class Clientes(models.Model):
     numero = models.IntegerField(blank=True, null=True)
 
     def __str__(self):
-        return str(self.Clientes)
+        return str(self.nombre)
